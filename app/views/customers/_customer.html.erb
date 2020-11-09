@@ -1,0 +1,14 @@
+<div class="column">
+  <div class="card">
+    <p class="title"><%= customer.full_name %></p>
+    <div class="card-image">
+        <figure class="style_image">
+          <%= image_tag customer.image, :class => "style_image" %>
+        </figure>
+    </div>
+    <div class="card-content">
+      <p>phone: <br> <%= customer.phone_number %></p>
+      <p>email: <br> <%= customer.email %></p>
+    </div>
+  </div>
+</div>

@@ -4,12 +4,29 @@
     <title>SimpleCRM</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+      body {
+        background-color: #F0F0F0;
+      }
+
+      .style_image {
+        width: 350px;
+        height: 250px;
+        border: 1px solid #000;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   </head>
 
   <body>
-    <%= yield %>
+    <section class="section">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </section>
   </body>
 </html>
